@@ -28,18 +28,20 @@ class _CardView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        children: [
-          ...cards.map((card) =>
-              _CardType1(label: card['label'], elevation: card['elevation'])),
-          ...cards.map((card) =>
-              _CardType2(label: card['label'], elevation: card['elevation'])),
-          ...cards.map((card) =>
-              _CardType3(label: card['label'], elevation: card['elevation'])),
-          ...cards.map((card) =>
-              _CardType4(label: card['label'], elevation: card['elevation'])),
-        ],
+    return SafeArea(
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            ...cards.map((card) =>
+                _CardType1(label: card['label'], elevation: card['elevation'])),
+            ...cards.map((card) =>
+                _CardType2(label: card['label'], elevation: card['elevation'])),
+            ...cards.map((card) =>
+                _CardType3(label: card['label'], elevation: card['elevation'])),
+            ...cards.map((card) =>
+                _CardType4(label: card['label'], elevation: card['elevation'])),
+          ],
+        ),
       ),
     );
   }
