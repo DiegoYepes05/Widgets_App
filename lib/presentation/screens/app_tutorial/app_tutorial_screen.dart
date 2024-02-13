@@ -98,7 +98,7 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
                     from: 15,
                     delay: const Duration(seconds: 1),
                     child: FilledButton(
-                      onPressed: () {},
+                      onPressed: () => context.pop(),
                       child: const Text('Comenzar'),
                     ),
                   ),

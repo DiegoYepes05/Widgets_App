@@ -57,4 +57,10 @@ const appMenuItems = <MenuItems>[
     icon: Icons.tungsten_rounded,
     link: '/tutorial',
   ),
+  MenuItems(
+    title: 'Infinite scroll',
+    subTitle: 'Infinte scroll Flutter',
+    icon: Icons.sync_rounded,
+    link: '/infinite',
+  ),
 ];
