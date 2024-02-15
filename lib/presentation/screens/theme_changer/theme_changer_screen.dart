@@ -14,7 +14,7 @@ class ThemeChangerScreen extends ConsumerWidget {
         actions: [
           IconButton(
             onPressed: () {
-              ref.watch(themeNotifierProvider.notifier).isDarkmodeProvider();
+              ref.read(themeNotifierProvider.notifier).isDarkmodeProvider();
             },
             icon: isDarkmode
                 ? const Icon(Icons.dark_mode_outlined)
