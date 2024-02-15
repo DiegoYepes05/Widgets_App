@@ -9,6 +9,10 @@ final appRouter = GoRouter(
       builder: (context, state) => const HomeScreen(),
     ),
     GoRoute(
+      path: '/counter',
+      builder: (context, state) => const CounterScreen(),
+    ),
+    GoRoute(
       path: '/buttons',
       builder: (context, state) => const ButtonsScreen(),
     ),
@@ -39,6 +43,10 @@ final appRouter = GoRouter(
     GoRoute(
       path: '/infinite',
       builder: (context, state) => const InfiniteScrollScreen(),
+    ),
+    GoRoute(
+      path: '/theme-changer',
+      builder: (context, state) => const ThemeChangerScreen(),
     ),
   ],
 );
