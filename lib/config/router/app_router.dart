@@ -48,5 +48,9 @@ final appRouter = GoRouter(
       path: '/theme-changer',
       builder: (context, state) => const ThemeChangerScreen(),
     ),
+    GoRoute(
+      path: '/badge',
+      builder: (context, state) => const BadgeScreen(),
+    ),
   ],
 );

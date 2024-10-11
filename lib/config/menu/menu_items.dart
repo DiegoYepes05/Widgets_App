@@ -75,4 +75,10 @@ const appMenuItems = <MenuItems>[
     icon: Icons.color_lens_outlined,
     link: '/theme-changer',
   ),
+  MenuItems(
+    title: 'Badge',
+    subTitle: 'Badge Flutter',
+    icon: Icons.badge_rounded,
+    link: '/badge',
+  ),
 ];
